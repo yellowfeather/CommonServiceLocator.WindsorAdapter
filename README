@@ -2,6 +2,6 @@
 -- CommonServiceLocator.WindsorAdapter
 --------------------------------------------
 
-Copy of code from Codeplex: http://commonservicelocator.codeplex.com/wikipage?title=Castle%20Windsor%20Adapter&referringTitle=Home
-
-Updated to .Net 4.0 and to use NuGet. Currently using Castle.Windsor 3.0.
+Original code from Codeplex: http://commonservicelocator.codeplex.com/wikipage?title=Castle%20Windsor%20Adapter&referringTitle=Home
+Updated to .Net 4.5 and to use NuGet.
+Currently using Castle.Windsor 4.1.0
