@@ -3,7 +3,6 @@
 	using System;
 	using System.Collections.Generic;
 	using Castle.Windsor;
-	using Microsoft.Practices.ServiceLocation;
 
 	/// <summary>
 	/// Adapts the behavior of the Windsor container to the common

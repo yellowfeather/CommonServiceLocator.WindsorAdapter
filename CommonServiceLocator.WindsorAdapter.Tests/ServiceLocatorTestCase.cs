@@ -3,7 +3,6 @@ namespace CommonServiceLocator.WindsorAdapter.Tests
 	using System.Collections;
 	using System.Collections.Generic;
 	using Components;
-	using Microsoft.Practices.ServiceLocation;
 	using NUnit.Framework;
 
 	public abstract class ServiceLocatorTestCase

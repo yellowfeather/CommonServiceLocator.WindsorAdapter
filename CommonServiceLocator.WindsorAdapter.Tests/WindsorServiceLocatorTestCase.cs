@@ -3,7 +3,6 @@ namespace CommonServiceLocator.WindsorAdapter.Tests
 	using Castle.MicroKernel.Registration;
 	using Castle.Windsor;
 	using Components;
-	using Microsoft.Practices.ServiceLocation;
 	using NUnit.Framework;
 
 	[TestFixture]
