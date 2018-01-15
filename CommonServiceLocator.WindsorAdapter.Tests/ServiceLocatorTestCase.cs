@@ -26,38 +26,35 @@ namespace CommonServiceLocator.WindsorAdapter.Tests
 		}
 
 		[Test]
-		[ExpectedException(typeof(ActivationException))]
 		public void AskingForInvalidComponentShouldRaiseActivationException()
 		{
-			locator.GetInstance<IDictionary>();
+            Assert.Throws<ActivationException>(() => locator.GetInstance<IDictionary>());
 		}
 
 		[Test]
 		public void GetNamedInstance()
 		{
 			ILogger instance = locator.GetInstance<ILogger>(typeof(AdvnacedLogger).FullName);
-			Assert.IsInstanceOfType(typeof(AdvnacedLogger), instance, "Should be an advanced logger");
+			Assert.IsInstanceOf(typeof(AdvnacedLogger), instance, "Should be an advanced logger");
 		}
 
 		[Test]
 		public void GetNamedInstance2()
 		{
 			ILogger instance = locator.GetInstance<ILogger>(typeof(SimpleLogger).FullName);
-			Assert.IsInstanceOfType(typeof(SimpleLogger), instance, "Should be a simple logger");
+			Assert.IsInstanceOf(typeof(SimpleLogger), instance, "Should be a simple logger");
 		}
 
 		[Test]
-		[ExpectedException(typeof(ActivationException))]
 		public void GetNamedInstance_WithZeroLenName()
 		{
-			locator.GetInstance<ILogger>("");
+            Assert.Throws<ActivationException>(() => locator.GetInstance<ILogger>(""));
 		}
 
 		[Test]
-		[ExpectedException(typeof(ActivationException))]
 		public void GetUnknownInstance2()
 		{
-			locator.GetInstance<ILogger>("test");
+            Assert.Throws<ActivationException>(() => locator.GetInstance<ILogger>("test"));
 		}
 
 		[Test]
