@@ -1,3 +1,5 @@
+using Microsoft.Practices.ServiceLocation;
+
 namespace CommonServiceLocator.WindsorAdapter.Tests
 {
 	using Castle.MicroKernel.Registration;
